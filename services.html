@@ -19,7 +19,7 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJB27Zttu_YcNbIOhM7WlvfYEUC2lIgRw&" async defer></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJB27Zttu_YcNbIOhM7WlvfYEUC2lIgRw&callback=initMap" async defer></script>
     <style>
       /* Set the size of the div element that contains the map */
     #map {
@@ -191,7 +191,7 @@
                 mylat=message.latitude;
                 mylon=message.longitude;
                 marker1.setLatLng([mylat,mylon]).update();
-                map.locate({setView: true, maxZoom: 8});
+                // map.locate({setView: true, maxZoom: 8});
                 // var myJSON = JSON.stringify(myLatLng);
                 // console.log(myLatLng1)
                // console.log(JSON.stringify(myLatLng1))
